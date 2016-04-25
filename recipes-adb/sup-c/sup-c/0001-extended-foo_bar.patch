@@ -1,0 +1,23 @@
+From 6f36918a40376bb64696bcb0530f8050959b28e2 Mon Sep 17 00:00:00 2001
+From: Piotr Walczak <P.Walczak@adbglobal.com>
+Date: Mon, 25 Apr 2016 15:33:46 +0200
+Subject: [PATCH 1/2] extended foo_bar
+
+---
+ sup-c.c | 1 +
+ 1 file changed, 1 insertion(+)
+
+diff --git a/sup-c.c b/sup-c.c
+index 1d57d68..a2101fb 100644
+--- a/sup-c.c
++++ b/sup-c.c
+@@ -21,5 +21,6 @@ void hello_yocto(void)
+ 
+ int foo_bar(void)
+ {
++    printf("foo_bar\n");
+     return 0;
+ }
+-- 
+1.9.1
+

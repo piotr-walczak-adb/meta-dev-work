@@ -1,0 +1,24 @@
+From 8ed0eb42dbb7ad1564433cb254a2140b53452f60 Mon Sep 17 00:00:00 2001
+From: Piotr Walczak <P.Walczak@adbglobal.com>
+Date: Mon, 25 Apr 2016 15:36:49 +0200
+Subject: [PATCH 2/2] extended foo_bar part 2
+
+---
+ sup-c.c | 1 +
+ 1 file changed, 1 insertion(+)
+
+diff --git a/sup-c.c b/sup-c.c
+index a2101fb..358bac2 100644
+--- a/sup-c.c
++++ b/sup-c.c
+@@ -8,6 +8,7 @@ int main(int argc, char **argv)
+ {
+     printf("\nIn %s calling function: hello_yocto\n", __FUNCTION__);
+     hello_yocto();
++    printf("\nIn %s calling function: ", __FUNCTION__);
+     foo_bar();
+     printf("Exiting...\n\n");
+     return 0;
+-- 
+1.9.1
+
