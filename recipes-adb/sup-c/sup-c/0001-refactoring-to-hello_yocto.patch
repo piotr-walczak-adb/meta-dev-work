@@ -1,0 +1,38 @@
+From 1f6d61758d9566e478a7f2a22c97897ba611a98f Mon Sep 17 00:00:00 2001
+From: Piotr Walczak <P.Walczak@adbglobal.com>
+Date: Mon, 25 Apr 2016 12:23:12 +0200
+Subject: [PATCH] refactoring to hello_yocto
+
+---
+ sup-c.c | 11 +++++++++--
+ 1 file changed, 9 insertions(+), 2 deletions(-)
+
+diff --git a/sup-c.c b/sup-c.c
+index 68a5c6a..c6bc9ea 100644
+--- a/sup-c.c
++++ b/sup-c.c
+@@ -1,12 +1,19 @@
+ #include <stdio.h>
+ #include <stdlib.h>
+ 
++void hello_yocto(void);
++
+ int main(int argc, char **argv)
+ {
++    printf("In %s calling function: hello_yocto\n", __FUNCTION__);
++    hello_yocto();
++    return 0;
++}
++
++void hello_yocto(void)
++{
+     printf("\n");
+     printf("Hello Yocto\n");
+     printf("devtool test on poky 2.0.1\n");
+-    printf("sources from sup-c.git");
+     printf("\n");
+-    return 0;
+ }
+-- 
+1.9.1
+

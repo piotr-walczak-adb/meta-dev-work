@@ -1,0 +1,42 @@
+From 008f0e2ec72ae1b01c2656f632183f900b1a7374 Mon Sep 17 00:00:00 2001
+From: Piotr Walczak <P.Walczak@adbglobal.com>
+Date: Mon, 25 Apr 2016 13:47:42 +0200
+Subject: [PATCH] adding foo_bar feature
+
+---
+ sup-c.c | 10 +++++++++-
+ 1 file changed, 9 insertions(+), 1 deletion(-)
+
+diff --git a/sup-c.c b/sup-c.c
+index a84c754..1d57d68 100644
+--- a/sup-c.c
++++ b/sup-c.c
+@@ -2,16 +2,24 @@
+ #include <stdlib.h>
+ 
+ void hello_yocto(void);
++int foo_bar(void);
+ 
+ int main(int argc, char **argv)
+ {
+     printf("\nIn %s calling function: hello_yocto\n", __FUNCTION__);
+     hello_yocto();
++    foo_bar();
++    printf("Exiting...\n\n");
+     return 0;
+ }
+ 
+ void hello_yocto(void)
+ {
+     printf("\nHello Yocto\n");
+-    printf("devtool test on poky 2.0.1\n\n");
++    printf("devtool test on poky 2.0.1\n");
++}
++
++int foo_bar(void)
++{
++    return 0;
+ }
+-- 
+1.9.1
+

@@ -1,0 +1,27 @@
+From 6efbdb194f41df686d6b791d95374f87b12b7a55 Mon Sep 17 00:00:00 2001
+From: Piotr Walczak <P.Walczak@adbglobal.com>
+Date: Mon, 25 Apr 2016 13:25:08 +0200
+Subject: [PATCH 2/2] small refactoring
+
+---
+ sup-c.c | 6 ++----
+ 1 file changed, 2 insertions(+), 4 deletions(-)
+
+diff --git a/sup-c.c b/sup-c.c
+index 7ecd053..a84c754 100644
+--- a/sup-c.c
++++ b/sup-c.c
+@@ -12,8 +12,6 @@ int main(int argc, char **argv)
+ 
+ void hello_yocto(void)
+ {
+-    printf("\n");
+-    printf("Hello Yocto\n");
+-    printf("devtool test on poky 2.0.1\n");
+-    printf("\n");
++    printf("\nHello Yocto\n");
++    printf("devtool test on poky 2.0.1\n\n");
+ }
+-- 
+1.9.1
+
